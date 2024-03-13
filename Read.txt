@@ -1,0 +1,4 @@
+1) open command prompt and go to project location like : cd C:\Users\ACER\Documents\html_folder
+2) type   node server.js   in command prompt 
+3) now server started .  
+4) brower with localhost.

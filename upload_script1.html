@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="upload_script.css" rel="stylesheet" />
+  <script src="script1.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="banner-container">
+    <form action="">
+      <div class="banner-header">
+        <div class="js-img-header-container">
+        </div>
+        <div class="title-header-container">
+          <span class="js-productTitle">productTitle</span>
+        </div>
+      </div>
+      <div class="menu_container">
+        <a class="menu-item" href="/">Device Info</a>
+        <span class="menu-item active">Updates</span>
+      </div>
+      <div class="main-container">
+        <div class="text-with-info-component">
+          <p class="title-info">ESP Communications IC</p>
+          <div class="text-info">
+            <span class="js-esp_communications span-info">Currently running version 4.21</span>
+          </div>
+          <label for="file-upload_esp_communications">
+            <p class="upload-button">Upload File</p>
+          </label>
+          <input id="file-upload_esp_communications" type="file" accept=".bin, .txt, .exe"
+            name="file-upload_esp_communications" />
+        </div>
+        <div class="text-with-info-component">
+          <p class="title-info">ESP Firmware File</p>
+          <div class="text-info">
+            <span class="js-espFirmwareFile span-info">None selected</span>
+          </div>
+          <button onclick="espFirmwareFileInstallUpdate(event)" class="upload-button">Install update</button>
+        </div>
+        <div class="COPUpdateContainer">
+          <div class="divider"></div>
+          <div class="text-with-info-component">
+            <p class="title-info">Coprocessor IC</p>
+            <div class="text-info">
+              <span class="js-coprocessorIC span-info">Currently running version 4.21</span>
+            </div>
+            <label for="file-upload_coprocessor">
+              <p class="upload-button">Upload File</p>
+            </label>
+            <input id="file-upload_coprocessor" type="file" accept=".bin, .txt, .exe" name="file-upload_coprocessor" />
+          </div>
+          <div class="text-with-info-component">
+            <p class="title-info">Coprocessor Firmware File</p>
+            <div class="text-info">
+              <span class="js-coprocessorFirmwareFile span-info">None selected</span>
+            </div>
+            <button onclick="coprocessorFirmwareFileInstallUpdate(event)" class="upload-button">Install update</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
